@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/osnova"
+        android:enabled="true"
+        android:icon="@drawable/home__1_"
+        android:title="@string/inbox_title"/>
+    <item
+        android:id="@+id/newScreen"
+        android:enabled="true"
+        android:icon="@drawable/_914208"
+        android:title="@string/outbox_title"/>
+    <item
+        android:id="@+id/userScreen"
+        android:enabled="true"
+        android:icon="@drawable/_917705"
+        android:title="@string/mail_subheader_title"/>
+</menu>
+ 

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navhost"
+    app:startDestination="@id/osnova">
+
+    <fragment
+        android:id="@+id/registerScreen"
+        android:name="com.example.sportlandapp.ui.RegisterScreen"
+        android:label="RegisterScreen" >
+        <action
+            android:id="@+id/action_registerScreen_to_inputScreen"
+            app:destination="@id/inputScreen" />
+        <action
+            android:id="@+id/action_registerScreen_to_forma"
+            app:destination="@id/forma"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/forma"
+        android:name="com.example.sportlandapp.ui.Forma"
+        android:label="Forma" >
+        <action
+            android:id="@+id/action_forma_to_osnova"
+            app:destination="@id/osnova"
+            app:popUpTo="@id/registerScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/osnova"
+        android:name="com.example.sportlandapp.ui.Osnova"
+        android:label="Osnova" >
+        <action
+            android:id="@+id/action_osnova_to_registerScreen"
+            app:destination="@id/registerScreen"
+            app:popUpTo="@id/registerScreen"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_osnova_to_newScreen"
+            app:destination="@id/newScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/inputScreen"
+        android:name="com.example.sportlandapp.ui.InputScreen"
+        android:label="InputScreen" >
+        <action
+            android:id="@+id/action_inputScreen_to_registerScreen2"
+            app:destination="@id/registerScreen" />
+        <action
+            android:id="@+id/action_inputScreen_to_osnova"
+            app:destination="@id/osnova"
+            app:popUpTo="@id/osnova"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainScreen"
+        android:name="com.example.sportlandapp.ui.MainScreen"
+        android:label="MainScreen" />
+    <fragment
+        android:id="@+id/newScreen"
+        android:name="com.example.sportlandapp.ui.NewScreen"
+        android:label="NewScreen" >
+        <action
+            android:id="@+id/action_newScreen_to_osnova"
+            app:destination="@id/osnova"
+            app:popUpTo="@id/osnova"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/userScreen"
+        android:name="com.example.sportlandapp.ui.UserScreen"
+        android:label="UserScreen" />
+
+</navigation>

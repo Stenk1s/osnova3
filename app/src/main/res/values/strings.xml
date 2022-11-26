@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">WorkJugent</string>
+    <string name="names">Ник</string>
+    <string name="login">Почта</string>
+    <string name="password">Пароль</string>
+    <string name="name">Имя</string>
+    <string name="fameli">Фамилия</string>
+    <string name="label_1">Мужской</string>
+    <string name="label_2">Женский</string>
+    <string name="namber">Телефон</string>
+    <string name="inbox_title">Главная</string>
+    <string name="outbox_title">Объявление</string>
+    <string name="singen_title">Настройки</string>
+    <string name="mail_subheader_title">Профиль</string>
+    <string name="title_home">Главная</string>
+    <string name="title_dashboard">Объявление</string>
+    <string name="title_notifications">Профиль</string>
+    <string name="exit">Вход</string>
+    <string name="dswfsda">Продолжить</string>
+    <string name="eyvriw">Пол</string>
+    <string name="exittttt">Зарегистрироваться</string>
+    <string name="exitceq">Регистрация</string>
+    <string name="yes">У меня уже есть аккаунт</string>
+    <string name="dsf">Вход</string>
+    <string name="whjq">Войти</string>
+    <string name="no">Я новый пользователь</string>
+    <string name="sity">Город</string>
+    <string name="dannaii">Заполните данные</string>
+    <string name="djsjakk">Дата рождения</string>
+    <string name="jsdc">Название</string>
+    <string name="hwqlk">Организация</string>
+    <string name="rabotadatel">Работадатель</string>
+    <string name="soiskatel">Соискатель</string>
+
+
+</resources>
