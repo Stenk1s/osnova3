@@ -20,7 +20,7 @@
     <string name="eyvriw">Пол</string>
     <string name="exittttt">Зарегистрироваться</string>
     <string name="exitceq">Регистрация</string>
-    <string name="yes">У меня уже есть аккаунт</string>
+    <string name="yes">Уже есть аккаунт</string>
     <string name="dsf">Вход</string>
     <string name="whjq">Войти</string>
     <string name="no">Я новый пользователь</string>
@@ -29,7 +29,7 @@
     <string name="djsjakk">Дата рождения</string>
     <string name="jsdc">Название</string>
     <string name="hwqlk">Организация</string>
-    <string name="rabotadatel">Работадатель</string>
+    <string name="rabotadatel">Работoдатель</string>
     <string name="soiskatel">Соискатель</string>
 
 

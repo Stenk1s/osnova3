@@ -29,6 +29,9 @@ class NewScreen : Fragment(R.layout.new_menu) {
             findNavController().navigate(R.id.action_newScreen_to_osnova)
 
         }
+        binding.imageButton.setOnClickListener {
+            findNavController().navigate(R.id.action_newScreen_to_osnova)
+        }
 
     }
 }
