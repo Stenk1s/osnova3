@@ -31,6 +31,8 @@
     <string name="hwqlk">Организация</string>
     <string name="rabotadatel">Работoдатель</string>
     <string name="soiskatel">Соискатель</string>
+    <string name="nazv">Название: %s </string>
+    <string name="pg">Организация: %s</string>
 
 
 </resources>

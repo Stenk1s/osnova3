@@ -3,9 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-        <variable
-            name="email"
-            type="com.example.sportlandapp.viewmodel.UserViewModel" />
 
         <variable
             name="user"
@@ -67,7 +64,7 @@
             android:layout_marginStart="110dp"
             android:layout_marginTop="-27dp"
             android:layout_marginEnd="30dp"
-            android:text="@{email.name}"
+            android:text="@{user.email}"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

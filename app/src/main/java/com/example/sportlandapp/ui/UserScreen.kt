@@ -17,8 +17,6 @@ class UserScreen : Fragment(R.layout.user_menu){
 
         binding.user = userViewModel
         binding.lifecycleOwner = viewLifecycleOwner
-        binding.email = userViewModel
-        binding.lifecycleOwner = viewLifecycleOwner
 
     }
 }
