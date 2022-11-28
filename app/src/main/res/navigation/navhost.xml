@@ -16,6 +16,7 @@
             android:id="@+id/action_registerScreen_to_forma"
             app:destination="@id/forma"
             app:popUpToInclusive="false" />
+
     </fragment>
     <fragment
         android:id="@+id/forma"
@@ -29,8 +30,9 @@
     </fragment>
     <fragment
         android:id="@+id/osnova"
+        tools:layout="@layout/activity_osnova"
         android:name="com.example.sportlandapp.ui.Osnova"
-        android:label="Osnova" >
+        android:label="Главная" >
         <action
             android:id="@+id/action_osnova_to_registerScreen"
             app:destination="@id/registerScreen"
@@ -54,11 +56,8 @@
             app:popUpToInclusive="true" />
     </fragment>
     <fragment
-        android:id="@+id/mainScreen"
-        android:name="com.example.sportlandapp.ui.MainScreen"
-        android:label="MainScreen" />
-    <fragment
         android:id="@+id/newScreen"
+        tools:layout="@layout/new_menu"
         android:name="com.example.sportlandapp.ui.NewScreen"
         android:label="NewScreen" >
         <action
@@ -66,10 +65,25 @@
             app:destination="@id/osnova"
             app:popUpTo="@id/osnova"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_newScreen_to_newScreen2"
+            app:destination="@id/newScreen2" />
     </fragment>
     <fragment
         android:id="@+id/userScreen"
         android:name="com.example.sportlandapp.ui.UserScreen"
-        android:label="UserScreen" />
+        android:label="Профиль" />
+    <fragment
+        android:id="@+id/newScreen2"
+        android:name="com.example.sportlandapp.ui.NewScreen2"
+        android:label="NewScreen2" >
+        <action
+            android:id="@+id/action_newScreen2_to_osnova"
+            app:destination="@id/osnova" />
+        <action
+            android:id="@+id/action_newScreen2_to_newScreen"
+            app:destination="@id/newScreen" />
+    </fragment>
+
 
 </navigation>

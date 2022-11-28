@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginVertical="16dp"
-    android:layout_marginEnd="32dp"
-    android:layout_marginStart="32dp">
+    android:layout_marginStart="32dp"
+    android:layout_marginEnd="32dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,21 +14,51 @@
         android:padding="16dp">
 
         <TextView
+            android:id="@+id/ad_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_black"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:id="@+id/ad_name"
-            android:text="@string/nazv">
+            app:layout_constraintTop_toTopOf="parent">                              <!--Название-->
 
         </TextView>
+
         <TextView
+            android:id="@+id/ad_zarplata"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toTopOf="parent">             <!--Зарплата-->
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/ad_sity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ad_sity"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">             <!--Город-->
+
+        </TextView>
+
+        <TextView
             android:id="@+id/ad_pg"
-            android:text="@string/pg">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">            <!--Организация-->
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/ad_namber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ad_namber"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">               <!--Номер-->
 
         </TextView>
     </LinearLayout>

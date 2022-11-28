@@ -13,8 +13,7 @@ import com.example.sportlandapp.ui.models.Ad
 import com.example.sportlandapp.viewmodel.AdVIewModel
 import com.google.android.material.textfield.MaterialAutoCompleteTextView
 
-class NewScreen : Fragment(R.layout.new_menu) {
-    private val AdVIewModel: AdVIewModel by activityViewModels()
+class NewScreen2 : Fragment(R.layout.newsled_menu) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val binding = NewMenuBinding.bind(view)
@@ -30,20 +29,14 @@ class NewScreen : Fragment(R.layout.new_menu) {
         )
         (binding.siti.editText as? MaterialAutoCompleteTextView)?.setSimpleItems(items)
         binding.newnaosn.setOnClickListener {
-            findNavController().navigate(R.id.action_newScreen_to_newScreen2)
-            AdVIewModel.adad(
-                Ad(
-                    binding.organization.editText!!.text.toString(),
-                    binding.name.editText!!.text.toString(),
-                    binding.siti.editText!!.text.toString(),
-                    binding.zp.editText!!.text.toString(),
-                )
-            )
+            findNavController().navigate(R.id.action_newScreen2_to_osnova)
 
         }
         binding.imageButton.setOnClickListener {
-            findNavController().navigate(R.id.action_newScreen_to_osnova)
+            findNavController().navigate(R.id.action_newScreen2_to_newScreen)
+
         }
 
     }
 }
+

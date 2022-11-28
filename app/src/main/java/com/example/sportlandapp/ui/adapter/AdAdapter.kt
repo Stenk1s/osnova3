@@ -13,6 +13,8 @@ class AdAdapter(private val AdDataSet: List<Ad>) : RecyclerView.Adapter<AdAdapte
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val ad_name = view.findViewById<TextView>(R.id.ad_name)
         val ad_pg = view.findViewById<TextView>(R.id.ad_pg)
+        val ad_sity = view.findViewById<TextView>(R.id.ad_sity)
+        val ad_zarplata = view.findViewById<TextView>(R.id.ad_zarplata)
 
     }
 
@@ -22,8 +24,11 @@ class AdAdapter(private val AdDataSet: List<Ad>) : RecyclerView.Adapter<AdAdapte
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.ad_name.text = holder.itemView.context.getString(R.string.nazv, AdDataSet[position].Title)
+        holder.ad_name.text =AdDataSet[position].Title
         holder.ad_pg.text = holder.itemView.context.getString(R.string.pg, AdDataSet[position].Organization)
+        holder.ad_sity.text = holder.itemView.context.getString(R.string.ad_sity, AdDataSet[position].Sity)
+        holder.ad_zarplata.text = holder.itemView.context.getString(R.string.ad_zarplata, AdDataSet[position].Zarplata)
+
     }
 
     override fun getItemCount(): Int {

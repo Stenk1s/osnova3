@@ -2,9 +2,12 @@ package com.example.sportlandapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toolbar
 import androidx.core.view.isVisible
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -14,15 +17,38 @@ class MainActivity : AppCompatActivity() {
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment_container) as NavHostFragment
         val navController = navHostFragment.navController
+        val AppBarConfiguration =
+            AppBarConfiguration(setOf(R.id.osnova, R.id.userScreen))
         findViewById<BottomNavigationView>(R.id.bottom_navigation)
             .setupWithNavController(navController)
+        findViewById<MaterialToolbar>(R.id.toolbar)
+            .setupWithNavController(navController, AppBarConfiguration)
         navController.addOnDestinationChangedListener { _, destination, _ ->
             when (destination.id) {
-                R.id.registerScreen -> findViewById<BottomNavigationView>(R.id.bottom_navigation).isVisible = false
-                R.id.forma -> findViewById<BottomNavigationView>(R.id.bottom_navigation).isVisible = false
-                R.id.inputScreen -> findViewById<BottomNavigationView>(R.id.bottom_navigation).isVisible = false
-                R.id.newScreen -> findViewById<BottomNavigationView>(R.id.bottom_navigation).isVisible = false
-            else -> findViewById<BottomNavigationView>(R.id.bottom_navigation).isVisible = true
+                R.id.registerScreen -> {
+                    findViewById<BottomNavigationView>(R.id.bottom_navigation).isVisible = false
+                    findViewById<Toolbar>(R.id.toolbar).isVisible = false
+                }
+                R.id.forma -> {
+                    findViewById<BottomNavigationView>(R.id.bottom_navigation).isVisible = false
+                    findViewById<Toolbar>(R.id.toolbar).isVisible = false
+                }
+                R.id.inputScreen -> {
+                    findViewById<BottomNavigationView>(R.id.bottom_navigation).isVisible = false
+                    findViewById<Toolbar>(R.id.toolbar).isVisible = false
+                }
+                R.id.newScreen -> {
+                    findViewById<BottomNavigationView>(R.id.bottom_navigation).isVisible = false
+                    findViewById<Toolbar>(R.id.toolbar).isVisible = false
+                }
+                R.id.newScreen2-> {
+                    findViewById<BottomNavigationView>(R.id.bottom_navigation).isVisible = false
+                    findViewById<Toolbar>(R.id.toolbar).isVisible = false
+                }
+            else -> {
+                findViewById<BottomNavigationView>(R.id.bottom_navigation).isVisible = true
+                findViewById<Toolbar>(R.id.toolbar).isVisible = true
+            }
             }
         }
     }
