@@ -9,6 +9,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.sportlandapp.R
 import com.example.sportlandapp.databinding.FormaActivityBinding
 import com.example.sportlandapp.databinding.NewMenuBinding
+import com.example.sportlandapp.databinding.NewsledMenuBinding
 import com.example.sportlandapp.ui.models.Ad
 import com.example.sportlandapp.viewmodel.AdVIewModel
 import com.google.android.material.textfield.MaterialAutoCompleteTextView
@@ -16,18 +17,7 @@ import com.google.android.material.textfield.MaterialAutoCompleteTextView
 class NewScreen2 : Fragment(R.layout.newsled_menu) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val binding = NewMenuBinding.bind(view)
-        val items = arrayOf(
-            "Тобольск",
-            "Тобольский район",
-            "Москва",
-            "Заводоуковск",
-            "Ишим",
-            "Ялуторовск",
-            "Тюмень",
-            "Санкт Петербург"
-        )
-        (binding.siti.editText as? MaterialAutoCompleteTextView)?.setSimpleItems(items)
+        val binding = NewsledMenuBinding.bind(view)
         binding.newnaosn.setOnClickListener {
             findNavController().navigate(R.id.action_newScreen2_to_osnova)
 

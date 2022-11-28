@@ -19,30 +19,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/siti"
-        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="310dp"
-        android:layout_marginEnd="20dp"
-        android:hint="@string/sity"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <AutoCompleteTextView
-            android:id="@+id/autoCompleteTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="none"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-
-    </com.google.android.material.textfield.TextInputLayout>
-
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/name"
@@ -51,7 +27,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="110dp"
         android:layout_marginEnd="20dp"
-        android:hint="Название"
+        android:hint="Описание"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -59,8 +35,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:maxLength="75"
-            android:maxLines="3" />
+            android:maxLength="150"
+            android:maxLines="6" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -73,8 +49,9 @@
         android:text="@string/dannaii"
         android:textAlignment="center"
         android:textSize="30sp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/organization"
@@ -83,7 +60,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="210dp"
         android:layout_marginEnd="20dp"
-        android:hint="@string/hwqlk"
+        android:hint="График работы"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -91,8 +68,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:maxLength="75"
-            android:maxLines="3" />
+            android:maxLength="125"
+            android:maxLines="5" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -100,9 +77,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="385dp"
+        android:layout_marginTop="320dp"
         android:layout_marginEnd="20dp"
-        android:hint="Зарплата"
+        android:hint="Требуемый опыт"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -111,8 +88,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="none"
-            android:maxLength="28"
-            android:maxLines="1" />
+            android:maxLength="50"
+            android:maxLines="2" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -121,9 +98,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="460dp"
+        android:layout_marginTop="400dp"
         android:layout_marginEnd="20dp"
-        android:hint="Возраст"
+        android:hint="Адрес"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -141,9 +118,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="540dp"
+        android:layout_marginTop="500dp"
         android:layout_marginEnd="20dp"
-        android:hint="Телефон"
+        android:hint="Требования"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -151,8 +128,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:maxLength="13"
-            android:maxLines="1" />
+            android:maxLength="200"
+            android:maxLines="6" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <ImageButton
@@ -160,7 +137,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/dannaii"
+        android:minHeight="48dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/arrow_back_ios_24px" />

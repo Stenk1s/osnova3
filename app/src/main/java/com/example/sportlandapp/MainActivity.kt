@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
                     findViewById<BottomNavigationView>(R.id.bottom_navigation).isVisible = false
                     findViewById<Toolbar>(R.id.toolbar).isVisible = false
                 }
-                R.id.newScreen2-> {
+                R.id.newScreen2 -> {
                     findViewById<BottomNavigationView>(R.id.bottom_navigation).isVisible = false
                     findViewById<Toolbar>(R.id.toolbar).isVisible = false
                 }
