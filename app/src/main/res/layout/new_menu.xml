@@ -11,13 +11,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
+        android:layout_marginTop="620dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="50dp"
         android:text="Продолжить"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/siti"
@@ -28,6 +29,7 @@
         android:layout_marginTop="310dp"
         android:layout_marginEnd="20dp"
         android:hint="@string/sity"
+        app:startIconDrawable="@drawable/location_on_24px"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,7 +61,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:maxLength="75"
+            android:maxLength="99"
             android:maxLines="3" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -91,7 +93,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:maxLength="75"
+            android:maxLength="99"
             android:maxLines="3" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -111,7 +113,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="none"
-            android:maxLength="25"
+            android:maxLength="33"
             android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -131,7 +133,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:maxLength="20"
+            android:maxLength="33"
             android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -143,6 +145,7 @@
         android:layout_marginTop="540dp"
         android:layout_marginEnd="20dp"
         android:hint="Телефон"
+        app:startIconDrawable="@drawable/call_24px"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">

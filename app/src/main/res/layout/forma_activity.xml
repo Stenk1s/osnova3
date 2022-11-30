@@ -16,6 +16,7 @@
         android:layout_marginEnd="20dp"
         app:boxBackgroundColor="@color/background"
         android:hint="@string/sity"
+        app:startIconDrawable="@drawable/location_on_24px"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,7 +61,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:maxLength="32"
+            android:maxLength="33"
             android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -79,7 +80,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:maxLength="32"
+            android:maxLength="33"
             android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -91,6 +92,7 @@
         android:layout_marginTop="270dp"
         android:layout_marginEnd="20dp"
         android:hint="@string/namber"
+        app:startIconDrawable="@drawable/call_24px"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -99,7 +101,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="phone"
-            android:maxLength="13"
+            android:maxLength="15"
             android:maxLines="1" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -112,6 +114,7 @@
         android:layout_marginTop="410dp"
         android:layout_marginEnd="20dp"
         android:hint="@string/djsjakk"
+        app:startIconDrawable="@drawable/today_24px"
         android:scrollbarSize="@dimen/material_emphasis_disabled"
         app:errorTextAppearance="@style/TextAppearance.AppCompat.Body1"
         app:helperText="ДД:ММ:ГГГГ"

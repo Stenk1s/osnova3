@@ -30,6 +30,7 @@
         android:layout_marginEnd="20dp"
         android:hint="@string/login"
         app:errorEnabled="true"
+        app:startIconDrawable="@drawable/drafts_24px"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -38,7 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:maxLength="32"
+            android:maxLength="33"
             android:maxLines="1" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -52,6 +53,7 @@
         android:layout_marginTop="350dp"
         android:layout_marginEnd="20dp"
         android:hint="@string/password"
+        app:startIconDrawable="@drawable/key_24px"
         app:endIconMode="password_toggle"
         app:errorEnabled="true"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,7 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
-            android:maxLength="32"
+            android:maxLength="25"
             android:maxLines="1" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -76,6 +78,7 @@
         android:layout_marginTop="150dp"
         android:layout_marginEnd="20dp"
         android:hint="@string/names"
+        app:startIconDrawable="@drawable/account_box_24px"
         app:errorEnabled="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -85,7 +88,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:maxLength="32"
+            android:maxLength="33"
             android:maxLines="1"
             android:textCursorDrawable="@android:drawable/dark_header" />
 

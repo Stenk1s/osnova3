@@ -3,6 +3,7 @@ package com.example.sportlandapp.ui
 import android.graphics.Typeface
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
@@ -19,6 +20,7 @@ class NewScreen2 : Fragment(R.layout.newsled_menu) {
         super.onViewCreated(view, savedInstanceState)
         val binding = NewsledMenuBinding.bind(view)
         binding.newnaosn.setOnClickListener {
+            Toast.makeText(requireContext(), "Объявление добавлено в профиль!", Toast.LENGTH_SHORT).show()
             findNavController().navigate(R.id.action_newScreen2_to_osnova)
 
         }
