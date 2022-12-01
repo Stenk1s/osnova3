@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.example.sportlandapp.R
+import com.example.sportlandapp.databinding.ActivityMainBinding.bind
 import com.example.sportlandapp.databinding.FormaActivityBinding
 import com.example.sportlandapp.ui.models.Ad
 import com.example.sportlandapp.viewmodel.AdVIewModel

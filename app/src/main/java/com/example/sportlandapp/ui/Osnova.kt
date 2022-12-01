@@ -23,8 +23,9 @@ class Osnova : Fragment(R.layout.activity_osnova) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val binding = ActivityOsnovaBinding.bind(view)
-        if (userViewModel.email.value.toString().isEmpty())
-            findNavController().navigate(R.id.action_osnova_to_registerScreen)
+        if (userViewModel.email.value.toString().isEmpty() || userViewModel.name.value.toString()
+                .isEmpty() || userViewModel.password.value.toString().isEmpty()
+        ) findNavController().navigate(R.id.action_osnova_to_registerScreen)
         binding.osnad.adapter = AdAdapter(Ad.adlist.value!!)
     }
 
