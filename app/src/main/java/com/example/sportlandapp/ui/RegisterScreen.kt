@@ -29,14 +29,14 @@ class RegisterScreen : Fragment(R.layout.fragment__register_sreen) {
             else passwordEditText.error = null
         }
         loginEditText.editText?.doOnTextChanged { text, _, _, _ ->
-            if (text?.length!! < 8 || !text.contains("@"))
-                loginEditText.error = "Неправельно введена почта"
+            if (text?.length!! < 8 || !text.contains("@") || !text.contains("."))
+                loginEditText.error = "Почта не существует"
             else {
-                if (text.split("@")[0].length > 5 ||
+                if (text.split("@")[0].length > 4 ||
                     text.split("@")[1].contains(".")
                 ) loginEditText.error = null
                 else
-                    loginEditText.error = "Ошибка"
+                    loginEditText.error = "Почта не существует"
             }
         }
         nameEditText.editText?.doOnTextChanged { text, _, _, _ ->
@@ -56,13 +56,14 @@ class RegisterScreen : Fragment(R.layout.fragment__register_sreen) {
 
     private fun toNextScreen() {
         if (binding.nameLayout.editText!!.text.toString().isEmpty() ||
-            (binding.loginLayout.editText!!.text.toString().isEmpty()
-                    || !binding.loginLayout.editText!!.text.toString().contains("@")) ||
+            (binding.loginLayout.editText!!.text.toString().isEmpty() ||
+                    !binding.loginLayout.editText!!.text.toString().contains("@") ||
+                    !binding.loginLayout.editText!!.text.toString().contains(".")) ||
             binding.passwordLayout.editText!!.text.toString().isEmpty()
-
-        ) Toast.makeText(
-            requireContext(), "Заполните поля", Toast.LENGTH_SHORT
-        ).show()
+        )
+            Toast.makeText(
+                requireContext(), "Неправельно заполнены поля", Toast.LENGTH_SHORT
+            ).show()
         else {
             userViewModel.changeUserData(
                 name = binding.nameLayout.editText!!.text.toString(),
