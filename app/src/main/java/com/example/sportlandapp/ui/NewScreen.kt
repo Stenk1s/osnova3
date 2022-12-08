@@ -14,6 +14,10 @@ import com.example.sportlandapp.databinding.NewMenuBinding
 import com.example.sportlandapp.ui.models.Ad
 import com.example.sportlandapp.viewmodel.AdVIewModel
 import com.google.android.material.textfield.MaterialAutoCompleteTextView
+import ru.tinkoff.decoro.MaskImpl
+import ru.tinkoff.decoro.slots.PredefinedSlots
+import ru.tinkoff.decoro.watchers.FormatWatcher
+import ru.tinkoff.decoro.watchers.MaskFormatWatcher
 
 class NewScreen : Fragment(R.layout.new_menu) {
     private val AdVIewModel: AdVIewModel by activityViewModels()
@@ -46,6 +50,10 @@ class NewScreen : Fragment(R.layout.new_menu) {
 
 
         }
+        val mask = MaskImpl.createTerminated(PredefinedSlots.RUS_PHONE_NUMBER)
+        mask.isHideHardcodedHead = true
+        val formatWatcher: FormatWatcher = MaskFormatWatcher(mask)
+        formatWatcher.installOn(binding.namber3)
     }
 
     private fun toNextmenu() {
@@ -58,14 +66,6 @@ class NewScreen : Fragment(R.layout.new_menu) {
                 requireContext(), "Неправельно заполнены поля", Toast.LENGTH_SHORT
             ).show()
         else {
-            AdVIewModel.adad(
-                Ad(
-                    binding.organization.editText!!.text.toString(),
-                    binding.name.editText!!.text.toString(),
-                    binding.siti.editText!!.text.toString(),
-                    binding.zp.editText!!.text.toString()
-                )
-            )
             findNavController().navigate(R.id.action_newScreen_to_newScreen2    )
         }
     }
