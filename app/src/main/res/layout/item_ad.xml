@@ -11,9 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="5dp">
 
         <TextView
+            android:textSize="24sp"
             android:id="@+id/ad_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -25,7 +26,10 @@
 
         <TextView
             android:id="@+id/ad_zarplata"
+            android:textSize="20sp"
+            android:textColor="@color/purple_700"
             android:layout_width="match_parent"
+            android:text="@string/ad_zarplata"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">             <!--Зарплата-->

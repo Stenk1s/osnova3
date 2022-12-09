@@ -29,7 +29,6 @@
         android:layout_marginTop="310dp"
         android:layout_marginEnd="20dp"
         android:hint="@string/sity"
-        app:endIconDrawable="@drawable/zvezda"
         app:startIconDrawable="@drawable/location_on_24px"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -139,7 +138,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/opisanie"
+        android:id="@+id/namber5"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -155,7 +154,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="phone"
-            android:maxLength="13"
             android:id="@+id/namber3"
             android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>

@@ -38,7 +38,7 @@
     <string name="tab_text_2">Tab 2</string>
     <string name="ad_sity">Город: %s</string>
     <string name="ad_namber">Телефон: %s</string>
-    <string name="ad_zarplata">%s ₽</string>
+    <string name="ad_zarplata">%s</string>
 
 
 </resources>

@@ -18,6 +18,7 @@ import ru.tinkoff.decoro.MaskImpl
 import ru.tinkoff.decoro.slots.PredefinedSlots
 import ru.tinkoff.decoro.watchers.FormatWatcher
 import ru.tinkoff.decoro.watchers.MaskFormatWatcher
+import java.util.*
 
 class NewScreen : Fragment(R.layout.new_menu) {
     private val AdVIewModel: AdVIewModel by activityViewModels()
@@ -43,7 +44,12 @@ class NewScreen : Fragment(R.layout.new_menu) {
             organization.typeface = Typeface.DEFAULT_BOLD
             opisanie.typeface = Typeface.DEFAULT_BOLD
             old.typeface = Typeface.DEFAULT_BOLD
-            newnaosn.setOnClickListener { toNextmenu() }
+            newnaosn.setOnClickListener {
+                binding.newnaosn.setOnClickListener {
+                    toNextmenu()
+
+                }
+            }
             imageButton.setOnClickListener {
                 findNavController().navigate(R.id.action_newScreen_to_osnova)
             }
@@ -59,14 +65,15 @@ class NewScreen : Fragment(R.layout.new_menu) {
     private fun toNextmenu() {
         if (binding.zp.editText!!.text.toString().isEmpty() ||
             (binding.name.editText!!.text.toString().isEmpty()
-                    || binding.opisanie.editText!!.text.toString().isEmpty()) ||
+                    || binding.namber5.editText!!.text.toString().isEmpty()) ||
             binding.siti.editText!!.text.toString().isEmpty()
         )
             Toast.makeText(
                 requireContext(), "Неправельно заполнены поля", Toast.LENGTH_SHORT
             ).show()
         else {
-            findNavController().navigate(R.id.action_newScreen_to_newScreen2    )
+
+            findNavController().navigate(R.id.action_newScreen_to_newScreen2)
         }
     }
 }

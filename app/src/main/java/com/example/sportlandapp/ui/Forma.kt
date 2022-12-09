@@ -8,6 +8,9 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.sportlandapp.R
 import com.example.sportlandapp.databinding.FormaActivityBinding
+import com.google.android.material.datepicker.CalendarConstraints
+import com.google.android.material.datepicker.DateValidatorPointForward
+import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.android.material.textfield.MaterialAutoCompleteTextView
 import ru.tinkoff.decoro.MaskImpl
 import ru.tinkoff.decoro.parser.UnderscoreDigitSlotsParser
@@ -60,6 +63,9 @@ class Forma : Fragment(R.layout.forma_activity) {
             findNavController().navigate(R.id.action_forma_to_osnova)
         }
     }
+
+
+
 
 }
 
