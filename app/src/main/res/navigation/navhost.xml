@@ -41,6 +41,9 @@
         <action
             android:id="@+id/action_osnova_to_newScreen"
             app:destination="@id/newScreen" />
+        <action
+            android:id="@+id/action_osnova_to_detailFragment"
+            app:destination="@id/detailFragment" />
     </fragment>
     <fragment
         android:id="@+id/inputScreen"
@@ -84,6 +87,10 @@
             android:id="@+id/action_newScreen2_to_newScreen"
             app:destination="@id/newScreen" />
     </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.sportlandapp.ui.DetailFragment"
+        android:label="Подробнее о вакансии" />
 
 
 </navigation>

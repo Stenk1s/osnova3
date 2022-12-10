@@ -15,7 +15,6 @@ import com.example.sportlandapp.ui.adapter.AdAdapter
 import com.example.sportlandapp.viewmodel.AdVIewModel
 import com.example.sportlandapp.viewmodel.UserViewModel
 
-@Suppress("DEPRECATION")
 class Osnova : Fragment(R.layout.activity_osnova) {
     private val Ad: AdVIewModel by activityViewModels()
     private val userViewModel: UserViewModel by activityViewModels()
@@ -26,7 +25,11 @@ class Osnova : Fragment(R.layout.activity_osnova) {
         if (userViewModel.email.value.toString().isEmpty() || userViewModel.name.value.toString()
                 .isEmpty() || userViewModel.password.value.toString().isEmpty()
         ) findNavController().navigate(R.id.action_osnova_to_registerScreen)
-        binding.osnad.adapter = AdAdapter(Ad.adlist.value!!)
+        binding.osnad.adapter = AdAdapter(Ad.adlist.value!!) {
+            val args = Bundle()
+            args.putString("ID", it)
+            findNavController().navigate(R.id.action_osnova_to_detailFragment, args)
+        }
     }
 
 

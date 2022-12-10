@@ -42,7 +42,7 @@ class NewScreen : Fragment(R.layout.new_menu) {
             name.typeface = Typeface.DEFAULT_BOLD
             siti.typeface = Typeface.DEFAULT_BOLD
             organization.typeface = Typeface.DEFAULT_BOLD
-            opisanie.typeface = Typeface.DEFAULT_BOLD
+            zp.typeface = Typeface.DEFAULT_BOLD
             old.typeface = Typeface.DEFAULT_BOLD
             newnaosn.setOnClickListener {
                 binding.newnaosn.setOnClickListener {
@@ -72,7 +72,13 @@ class NewScreen : Fragment(R.layout.new_menu) {
                 requireContext(), "Неправельно заполнены поля", Toast.LENGTH_SHORT
             ).show()
         else {
-
+            AdVIewModel.adad1(
+                Organization = binding.organization.editText!!.text.toString(),
+                Title = binding.name.editText!!.text.toString(),
+                Sity = binding.siti.editText!!.text.toString(),
+                Zarplata = binding.zp.editText!!.text.toString(),
+                Namber = binding.namber5.editText!!.text.toString(),
+            )
             findNavController().navigate(R.id.action_newScreen_to_newScreen2)
         }
     }

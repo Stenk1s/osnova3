@@ -10,7 +10,7 @@ data class Ad(
     val Zarplata: String,
     val Opisanie: String,
     val Grafik: String,
-    val opet: String,
+    val Opet: String,
     val Adres: String,
     val Trebovanie: String,
     val Namber: String,

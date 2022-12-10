@@ -44,15 +44,28 @@ class NewScreen2 : Fragment(R.layout.newsled_menu) {
                 requireContext(), "Неправельно заполнены поля", Toast.LENGTH_SHORT
             ).show()
         else {
+            AdVIewModel.adad2(
+                Opisanie = binding.opisanie.editText!!.text.toString(),
+                Grafik = binding.grafikrabot.editText!!.text.toString(),
+                opet = binding.opet.editText!!.text.toString(),
+                Adres = binding.adres.editText!!.text.toString(),
+                Trebovanie = binding.trebovania.editText!!.text.toString(),
+            )
             AdVIewModel.adad(
-                Ad(
-                    Organization = AdVIewModel.
-                    Title = binding.name.editText!!.text.toString(),
-                    Sity = binding.siti.editText!!.text.toString(),
-                    Zarplata = binding.zp.editText!!.text.toString(),
-                    Namber = binding.namber5.editText!!.text.toString(),
+                ad = Ad(
+                    Title = AdVIewModel.title.value.toString(),
+                     Sity = AdVIewModel.sity.value.toString(),
+                    Organization =  AdVIewModel.organization.value.toString(),
+                    Zarplata = AdVIewModel.zarplata.value.toString(),
+                    Opisanie = AdVIewModel.opisanie.value.toString(),
+                    Grafik = AdVIewModel.grafik.value.toString(),
+                    Opet = AdVIewModel.opet.value.toString(),
+                    Adres = AdVIewModel.adres.value.toString(),
+                    Trebovanie = AdVIewModel.trebovanie.value.toString(),
+                    Namber = AdVIewModel.namber.value.toString(),
                     Id = UUID.randomUUID()
-                )
+
+                    )
             )
             Toast.makeText(requireContext(), "Объявление добавлено в профиль!", Toast.LENGTH_SHORT)
                 .show()
