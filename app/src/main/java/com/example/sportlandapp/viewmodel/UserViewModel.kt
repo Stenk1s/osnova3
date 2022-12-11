@@ -1,26 +1,46 @@
 package com.example.sportlandapp.viewmodel
 
 import android.provider.ContactsContract.CommonDataKinds.Email
+import androidx.compose.ui.text.font.LoadedFontFamily
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.sportlandapp.ui.models.Ad
+import com.example.sportlandapp.ui.models.User
 
 class UserViewModel : ViewModel() {
     private val _email = MutableLiveData<String>("")
-    private val _name = MutableLiveData<String>("")
     private val _password = MutableLiveData<String>("")
+    private val _name = MutableLiveData<String>("")
+    private val _family = MutableLiveData<String>("")
+    private val _neim = MutableLiveData<String>("")
+    private val _sity = MutableLiveData<String>("")
+    private val _data = MutableLiveData<String>("")
+    private val _namber = MutableLiveData<String>("")
     val email: LiveData<String> = _email
-    val name: LiveData<String> = _name
     val password: LiveData<String> = _password
+    val name: LiveData<String> = _name
+    val family: LiveData<String> = _family
+    val neim: LiveData<String> = _neim
+    val sity: LiveData<String> = _sity
+    val data: LiveData<String> = _data
+    val namber: LiveData<String> = _namber
 
 
-    fun changeUserData(name: String,email: String,password: String){
-        _email.value = email
-        _name.value = name
-        _password.value = password
+    fun changeUserData2(neim: String, family: String, sity: String, data: String, namber: String) {
+        _neim.value = neim
+        _family.value = family
+        _data.value = data
+        _sity.value = sity
+        _namber.value = namber
 
     }
 
+    fun changeUserData1(password: String, email: String, name: String) {
+        _password.value = password
+        _email.value = email
+        _name.value = name
 
+    }
 
 }

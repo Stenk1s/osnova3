@@ -12,9 +12,9 @@
     <string name="outbox_title">Объявление</string>
     <string name="singen_title">Настройки</string>
     <string name="mail_subheader_title">Профиль</string>
-    <string name="title_home">Главная</string>
-    <string name="title_dashboard">Объявление</string>
-    <string name="title_notifications">Профиль</string>
+    <string name="title_home">главная</string>
+    <string name="title_dashboard">объявление</string>
+    <string name="title_notifications">профиль</string>
     <string name="exit">Вход</string>
     <string name="dswfsda">Продолжить</string>
     <string name="eyvriw">Пол</string>

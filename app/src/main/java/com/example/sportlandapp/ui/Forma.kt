@@ -5,9 +5,14 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.example.sportlandapp.R
 import com.example.sportlandapp.databinding.FormaActivityBinding
+import com.example.sportlandapp.ui.models.Ad
+import com.example.sportlandapp.ui.models.User
+import com.example.sportlandapp.viewmodel.AdVIewModel
+import com.example.sportlandapp.viewmodel.UserViewModel
 import com.google.android.material.datepicker.CalendarConstraints
 import com.google.android.material.datepicker.DateValidatorPointForward
 import com.google.android.material.datepicker.MaterialDatePicker
@@ -21,6 +26,7 @@ import ru.tinkoff.decoro.watchers.MaskFormatWatcher
 
 class Forma : Fragment(R.layout.forma_activity) {
     private lateinit var binding: FormaActivityBinding
+    private val UserViewModel: AdVIewModel by activityViewModels()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FormaActivityBinding.bind(view)
@@ -63,8 +69,6 @@ class Forma : Fragment(R.layout.forma_activity) {
             findNavController().navigate(R.id.action_forma_to_osnova)
         }
     }
-
-
 
 
 }

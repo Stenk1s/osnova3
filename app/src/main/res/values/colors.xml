@@ -10,8 +10,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="green_night">#93D597</color>
-    <color name="green">#A1C751</color>
-    <color name="green_500">#014013</color>
-    <color name="background">#836E5D</color>
-    <color name="ad">#F2DBC9</color>
+    <color name="green">#487E2B</color>
+    <color name="green_500">#035106</color>
+    <color name="background">#E4DAD1</color>
+    <color name="ad">#85776C</color>
 </resources>

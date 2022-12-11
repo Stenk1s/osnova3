@@ -65,7 +65,7 @@ class RegisterScreen : Fragment(R.layout.fragment__register_sreen) {
                 requireContext(), "Неправельно заполнены поля", Toast.LENGTH_SHORT
             ).show()
         else {
-            userViewModel.changeUserData(
+            userViewModel.changeUserData1(
                 name = binding.nameLayout.editText!!.text.toString(),
                 email = binding.loginLayout.editText!!.text.toString(),
                 password = binding.passwordLayout.editText!!.text.toString()

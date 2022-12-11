@@ -16,6 +16,9 @@
             android:id="@+id/action_registerScreen_to_forma"
             app:destination="@id/forma"
             app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_registerScreen_to_osnova"
+            app:destination="@id/osnova" />
 
     </fragment>
     <fragment

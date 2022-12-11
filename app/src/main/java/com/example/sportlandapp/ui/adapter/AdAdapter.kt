@@ -17,6 +17,7 @@ class AdAdapter(private val AdDataSet: List<Ad>, private val clickListener: (Str
         val ad_pg = view.findViewById<TextView>(R.id.ad_pg)
         val ad_sity = view.findViewById<TextView>(R.id.ad_sity)
         val ad_zarplata = view.findViewById<TextView>(R.id.ad_zarplata)
+        val ad_namber = view.findViewById<TextView>(R.id.ad_namber)
         val button = view.findViewById<Button>(R.id.v_obavlen)
     }
 
@@ -27,6 +28,7 @@ class AdAdapter(private val AdDataSet: List<Ad>, private val clickListener: (Str
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.ad_name.text =AdDataSet[position].Title
+        holder.ad_namber.text =AdDataSet[position].Namber
         holder.ad_pg.text = holder.itemView.context.getString(R.string.pg, AdDataSet[position].Organization)
         holder.ad_sity.text = holder.itemView.context.getString(R.string.ad_sity, AdDataSet[position].Sity)
         holder.ad_zarplata.text = holder.itemView.context.getString(R.string.ad_zarplata, AdDataSet[position].Zarplata)

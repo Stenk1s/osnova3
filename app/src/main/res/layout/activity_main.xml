@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".MainActivity">
 
     <androidx.fragment.app.FragmentContainerView
@@ -35,6 +36,7 @@
         android:layout_width="match_parent"
         android:id="@+id/toolbar"
         android:background="@color/green"
+        app:titleTextColor="@color/white"
         android:fontFamily="@font/roboto_bold"
         android:scrollbarSize="30sp"
         app:titleCentered="true"

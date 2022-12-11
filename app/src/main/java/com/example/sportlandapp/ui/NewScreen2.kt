@@ -54,7 +54,7 @@ class NewScreen2 : Fragment(R.layout.newsled_menu) {
             AdVIewModel.adad(
                 ad = Ad(
                     Title = AdVIewModel.title.value.toString(),
-                     Sity = AdVIewModel.sity.value.toString(),
+                    Sity = AdVIewModel.sity.value.toString(),
                     Organization =  AdVIewModel.organization.value.toString(),
                     Zarplata = AdVIewModel.zarplata.value.toString(),
                     Opisanie = AdVIewModel.opisanie.value.toString(),
