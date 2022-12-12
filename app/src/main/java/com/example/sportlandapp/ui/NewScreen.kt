@@ -78,6 +78,7 @@ class NewScreen : Fragment(R.layout.new_menu) {
                 Sity = binding.siti.editText!!.text.toString(),
                 Zarplata = binding.zp.editText!!.text.toString(),
                 Namber = binding.namber5.editText!!.text.toString(),
+                Old = binding.old.editText!!.text.toString(),
             )
             findNavController().navigate(R.id.action_newScreen_to_newScreen2)
         }

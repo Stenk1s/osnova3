@@ -26,7 +26,7 @@ import ru.tinkoff.decoro.watchers.MaskFormatWatcher
 
 class Forma : Fragment(R.layout.forma_activity) {
     private lateinit var binding: FormaActivityBinding
-    private val UserViewModel: AdVIewModel by activityViewModels()
+    private val UserViewModel: UserViewModel by activityViewModels()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FormaActivityBinding.bind(view)
@@ -66,12 +66,19 @@ class Forma : Fragment(R.layout.forma_activity) {
         ).show()
         else {
 
+            UserViewModel.changeUserData2(
+                family = binding.famili.editText!!.text.toString(),
+                namber = binding.namber.editText!!.text.toString(),
+                sity = binding.siti.editText!!.text.toString(),
+                neim = binding.neim.editText!!.text.toString(),
+                data = binding.data.editText!!.text.toString(),
+            )
             findNavController().navigate(R.id.action_forma_to_osnova)
         }
     }
-
-
 }
+
+
 
 
 

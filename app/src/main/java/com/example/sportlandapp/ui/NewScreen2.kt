@@ -63,6 +63,7 @@ class NewScreen2 : Fragment(R.layout.newsled_menu) {
                     Adres = AdVIewModel.adres.value.toString(),
                     Trebovanie = AdVIewModel.trebovanie.value.toString(),
                     Namber = AdVIewModel.namber.value.toString(),
+                    Old = AdVIewModel.old.value.toString(),
                     Id = UUID.randomUUID()
 
                     )

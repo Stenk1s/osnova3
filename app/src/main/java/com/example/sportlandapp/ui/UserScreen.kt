@@ -8,6 +8,7 @@ import com.example.sportlandapp.R
 import com.example.sportlandapp.databinding.UserMenuBinding
 import com.example.sportlandapp.viewmodel.UserViewModel
 
+
 class UserScreen : Fragment(R.layout.user_menu){
     private val userViewModel: UserViewModel by activityViewModels()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

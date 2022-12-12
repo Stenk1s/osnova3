@@ -13,5 +13,6 @@ data class Ad(
     val Opet: String,
     val Adres: String,
     val Trebovanie: String,
-    val Namber: String
+    val Namber: String,
+    val Old: String
 )

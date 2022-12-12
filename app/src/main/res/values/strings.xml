@@ -39,6 +39,7 @@
     <string name="ad_sity">Город: %s</string>
     <string name="ad_namber">Телефон: %s</string>
     <string name="ad_zarplata">%s</string>
+    <string name="zp">Зарплата: %s</string>
 
 
 </resources>

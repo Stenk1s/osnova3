@@ -15,6 +15,7 @@ class AdVIewModel : ViewModel() {
     private val _Opisanie= MutableLiveData<String>("")
     private val _Grafik= MutableLiveData<String>("")
     private val _opet= MutableLiveData<String>("")
+    private val _Old= MutableLiveData<String>("")
     private val _Adres= MutableLiveData<String>("")
     private val _Trebovanie= MutableLiveData<String>("")
     private val _Namber= MutableLiveData<String>("")
@@ -22,6 +23,7 @@ class AdVIewModel : ViewModel() {
     val sity: LiveData<String> = _Sity
     val organization: LiveData<String> = _Organization
     val zarplata: LiveData<String> = _Zarplata
+    val old: LiveData<String> = _Old
     val opisanie: LiveData<String> = _Opisanie
     val grafik: LiveData<String> = _Grafik
     val opet: LiveData<String> = _opet
@@ -35,12 +37,13 @@ class AdVIewModel : ViewModel() {
         oldList?.add(ad)
         _adList.value = oldList?.toList()
     }
-    fun adad1(Title:String, Organization:String, Sity:String, Zarplata:String, Namber:String ){
+    fun adad1(Title:String,Old:String, Organization:String, Sity:String, Zarplata:String, Namber:String ){
         _Title.value = Title
         _Sity.value = Sity
         _Organization.value = Organization
         _Zarplata.value = Zarplata
         _Namber.value = Namber
+        _Old.value = Old
     }
     fun adad2(Opisanie:String, Grafik:String, opet:String, Adres:String, Trebovanie:String ){
         _Opisanie.value = Opisanie

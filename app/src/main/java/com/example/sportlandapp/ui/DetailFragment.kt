@@ -21,6 +21,17 @@ class DetailFragment: Fragment(R.layout.detail_fragment) {
         }
         if (currentAd != null) {
             binding.title.text = currentAd.Title
+            binding.zarplata.text = getString(R.string.zp, currentAd.Zarplata)
+            binding.old.text = currentAd.Old
+            binding.organization.text = currentAd.Organization
+            binding.opet.text = currentAd.Opet
+            binding.opisanie.text = currentAd.Opisanie
+            binding.trebovania.text = currentAd.Trebovanie
+            binding.sity.text = currentAd.Sity
+            binding.adres.text = currentAd.Adres
+            binding.namber.text = currentAd.Namber
+            binding.grafikrabot.text = currentAd.Grafik
+
         }
     }
 }
