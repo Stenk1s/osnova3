@@ -4,20 +4,25 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
 import com.example.sportlandapp.R
 import com.example.sportlandapp.databinding.UserMenuBinding
 import com.example.sportlandapp.viewmodel.UserViewModel
 
 
-class UserScreen : Fragment(R.layout.user_menu){
+class UserScreen : Fragment(R.layout.user_menu) {
     private val userViewModel: UserViewModel by activityViewModels()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         val binding: UserMenuBinding = UserMenuBinding.bind(view)
+        binding.button3.setOnClickListener {
+            findNavController().navigate(R.id.action_userScreen_to_registerScreen)
+        }
 
         binding.user = userViewModel
         binding.lifecycleOwner = viewLifecycleOwner
 
     }
+
 }

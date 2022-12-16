@@ -78,7 +78,14 @@
     <fragment
         android:id="@+id/userScreen"
         android:name="com.example.sportlandapp.ui.UserScreen"
-        android:label="Профиль" />
+        android:label="Профиль" >
+        <action
+            android:id="@+id/action_userScreen_to_registerScreen"
+            app:destination="@id/registerScreen" />
+        <action
+            android:id="@+id/action_userScreen_to_maiAd"
+            app:destination="@id/maiAd" />
+    </fragment>
     <fragment
         android:id="@+id/newScreen2"
         android:name="com.example.sportlandapp.ui.NewScreen2"
@@ -94,6 +101,10 @@
         android:id="@+id/detailFragment"
         android:name="com.example.sportlandapp.ui.DetailFragment"
         android:label="Подробнее о вакансии" />
+    <fragment
+        android:id="@+id/maiAd"
+        android:name="com.example.sportlandapp.ui.MaiAd"
+        android:label="MaiAd" />
 
 
 </navigation>
