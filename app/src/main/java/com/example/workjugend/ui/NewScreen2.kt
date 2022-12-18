@@ -1,4 +1,4 @@
-package com.example.sportlandapp.ui
+package com.example.workjugend.ui
 
 import android.graphics.Typeface
 import android.os.Bundle
@@ -7,10 +7,10 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
-import com.example.sportlandapp.R
-import com.example.sportlandapp.databinding.NewsledMenuBinding
-import com.example.sportlandapp.ui.models.Ad
-import com.example.sportlandapp.viewmodel.AdVIewModel
+import com.example.workjugend.R
+import com.example.workjugend.databinding.NewsledMenuBinding
+import com.example.workjugend.ui.models.Ad
+import com.example.workjugend.viewmodel.AdVIewModel
 import java.util.*
 
 class NewScreen2 : Fragment(R.layout.newsled_menu) {

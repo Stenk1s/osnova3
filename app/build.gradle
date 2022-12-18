@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.sportlandapp'
+    namespace 'com.example.workjugend'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.sportlandapp"
+        applicationId "com.example.workjugend"
         minSdk 21
         targetSdk 33
         versionCode 1

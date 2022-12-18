@@ -1,4 +1,4 @@
-package com.example.sportlandapp
+package com.example.workjugend
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

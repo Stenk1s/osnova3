@@ -1,12 +1,8 @@
-package com.example.sportlandapp.viewmodel
+package com.example.workjugend.viewmodel
 
-import android.provider.ContactsContract.CommonDataKinds.Email
-import androidx.compose.ui.text.font.LoadedFontFamily
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.sportlandapp.ui.models.Ad
-import com.example.sportlandapp.ui.models.User
 
 class UserViewModel : ViewModel() {
     private val _email = MutableLiveData<String>("")

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/registerScreen"
-        android:name="com.example.sportlandapp.ui.RegisterScreen"
+        android:name="com.example.workjugend.ui.RegisterScreen"
         android:label="RegisterScreen" >
         <action
             android:id="@+id/action_registerScreen_to_inputScreen"
@@ -23,7 +23,7 @@
     </fragment>
     <fragment
         android:id="@+id/forma"
-        android:name="com.example.sportlandapp.ui.Forma"
+        android:name="com.example.workjugend.ui.Forma"
         android:label="Forma" >
         <action
             android:id="@+id/action_forma_to_osnova"
@@ -34,7 +34,7 @@
     <fragment
         android:id="@+id/osnova"
         tools:layout="@layout/activity_osnova"
-        android:name="com.example.sportlandapp.ui.Osnova"
+        android:name="com.example.workjugend.ui.Osnova"
         android:label="Главная" >
         <action
             android:id="@+id/action_osnova_to_registerScreen"
@@ -50,7 +50,7 @@
     </fragment>
     <fragment
         android:id="@+id/inputScreen"
-        android:name="com.example.sportlandapp.ui.InputScreen"
+        android:name="com.example.workjugend.ui.InputScreen"
         android:label="InputScreen" >
         <action
             android:id="@+id/action_inputScreen_to_registerScreen2"
@@ -64,7 +64,7 @@
     <fragment
         android:id="@+id/newScreen"
         tools:layout="@layout/new_menu"
-        android:name="com.example.sportlandapp.ui.NewScreen"
+        android:name="com.example.workjugend.ui.NewScreen"
         android:label="NewScreen" >
         <action
             android:id="@+id/action_newScreen_to_osnova"
@@ -77,7 +77,7 @@
     </fragment>
     <fragment
         android:id="@+id/userScreen"
-        android:name="com.example.sportlandapp.ui.UserScreen"
+        android:name="com.example.workjugend.ui.UserScreen"
         android:label="Профиль" >
         <action
             android:id="@+id/action_userScreen_to_registerScreen"
@@ -88,7 +88,7 @@
     </fragment>
     <fragment
         android:id="@+id/newScreen2"
-        android:name="com.example.sportlandapp.ui.NewScreen2"
+        android:name="com.example.workjugend.ui.NewScreen2"
         android:label="NewScreen2" >
         <action
             android:id="@+id/action_newScreen2_to_osnova"
@@ -99,11 +99,11 @@
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
-        android:name="com.example.sportlandapp.ui.DetailFragment"
+        android:name="com.example.workjugend.ui.DetailFragment"
         android:label="Подробнее о вакансии" />
     <fragment
         android:id="@+id/maiAd"
-        android:name="com.example.sportlandapp.ui.MaiAd"
+        android:name="com.example.workjugend.ui.MaiAd"
         android:label="MaiAd" />
 
 

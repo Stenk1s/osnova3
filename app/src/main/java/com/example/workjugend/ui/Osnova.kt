@@ -1,19 +1,15 @@
-package com.example.sportlandapp.ui
+package com.example.workjugend.ui
 
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuInflater
-import android.view.MenuItem
 import android.view.View
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
-import com.example.sportlandapp.R
-import com.example.sportlandapp.databinding.ActivityOsnovaBinding
-import com.example.sportlandapp.ui.adapter.AdAdapter
-import com.example.sportlandapp.viewmodel.AdVIewModel
-import com.example.sportlandapp.viewmodel.UserViewModel
+import com.example.workjugend.R
+import com.example.workjugend.databinding.ActivityOsnovaBinding
+import com.example.workjugend.ui.adapter.AdAdapter
+import com.example.workjugend.viewmodel.AdVIewModel
+import com.example.workjugend.viewmodel.UserViewModel
 
 class Osnova : Fragment(R.layout.activity_osnova) {
     private val Ad: AdVIewModel by activityViewModels()

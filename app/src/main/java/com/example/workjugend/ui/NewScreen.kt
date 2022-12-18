@@ -1,4 +1,4 @@
-package com.example.sportlandapp.ui
+package com.example.workjugend.ui
 
 import android.graphics.Typeface
 import android.os.Bundle
@@ -7,12 +7,9 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
-import com.example.sportlandapp.R
-import com.example.sportlandapp.databinding.FormaActivityBinding
-import com.example.sportlandapp.databinding.FragmentRegisterSreenBinding
-import com.example.sportlandapp.databinding.NewMenuBinding
-import com.example.sportlandapp.ui.models.Ad
-import com.example.sportlandapp.viewmodel.AdVIewModel
+import com.example.workjugend.R
+import com.example.workjugend.databinding.NewMenuBinding
+import com.example.workjugend.viewmodel.AdVIewModel
 import com.google.android.material.textfield.MaterialAutoCompleteTextView
 import ru.tinkoff.decoro.MaskImpl
 import ru.tinkoff.decoro.slots.PredefinedSlots

@@ -1,4 +1,4 @@
-package com.example.sportlandapp
+package com.example.workjugend
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

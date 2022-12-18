@@ -9,7 +9,7 @@
 
         <variable
             name="user"
-            type="com.example.sportlandapp.viewmodel.UserViewModel" />
+            type="com.example.workjugend.viewmodel.UserViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

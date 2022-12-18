@@ -1,4 +1,4 @@
-package com.example.sportlandapp.ui.models
+package com.example.workjugend.ui.models
 
 data class User(
     val Name: String,

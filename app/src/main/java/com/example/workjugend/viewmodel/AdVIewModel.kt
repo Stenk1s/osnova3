@@ -1,10 +1,9 @@
-package com.example.sportlandapp.viewmodel
+package com.example.workjugend.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.sportlandapp.ui.models.Ad
-import java.util.*
+import com.example.workjugend.ui.models.Ad
 
 class AdVIewModel : ViewModel() {
     private val _adList = MutableLiveData<List<Ad>>(emptyList())

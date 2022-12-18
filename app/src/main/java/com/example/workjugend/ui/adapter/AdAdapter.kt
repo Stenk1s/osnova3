@@ -1,15 +1,13 @@
-package com.example.sportlandapp.ui.adapter
+package com.example.workjugend.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.ExpandableListView.OnChildClickListener
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.Recycler
-import com.example.sportlandapp.R
-import com.example.sportlandapp.ui.models.Ad
+import com.example.workjugend.R
+import com.example.workjugend.ui.models.Ad
 
 class AdAdapter(private val AdDataSet: List<Ad>, private val clickListener: (String) -> Unit) : RecyclerView.Adapter<AdAdapter.ViewHolder>() {
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {

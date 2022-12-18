@@ -1,13 +1,12 @@
-package com.example.sportlandapp.ui
+package com.example.workjugend.ui
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import com.example.sportlandapp.R
-import com.example.sportlandapp.databinding.DetailFragmentBinding
-import com.example.sportlandapp.ui.models.Ad
-import com.example.sportlandapp.viewmodel.AdVIewModel
+import com.example.workjugend.R
+import com.example.workjugend.databinding.DetailFragmentBinding
+import com.example.workjugend.viewmodel.AdVIewModel
 
 class DetailFragment: Fragment(R.layout.detail_fragment) {
     private val AdViewModel: AdVIewModel by activityViewModels()

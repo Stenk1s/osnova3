@@ -1,12 +1,12 @@
-package com.example.sportlandapp.ui
+package com.example.workjugend.ui
 
 import android.graphics.Typeface
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.sportlandapp.R
-import com.example.sportlandapp.databinding.ActivityExitnotBinding
+import com.example.workjugend.R
+import com.example.workjugend.databinding.ActivityExitnotBinding
 
 
 class InputScreen : Fragment(R.layout.activity_exitnot) {

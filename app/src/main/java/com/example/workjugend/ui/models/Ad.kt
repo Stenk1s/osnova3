@@ -1,4 +1,4 @@
-package com.example.sportlandapp.ui.models
+package com.example.workjugend.ui.models
 
 import java.util.UUID
 

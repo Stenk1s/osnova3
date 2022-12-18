@@ -1,4 +1,4 @@
-package com.example.sportlandapp.ui
+package com.example.workjugend.ui
 
 import android.graphics.Typeface
 import android.os.Bundle
@@ -8,9 +8,9 @@ import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
-import com.example.sportlandapp.R
-import com.example.sportlandapp.databinding.FragmentRegisterSreenBinding
-import com.example.sportlandapp.viewmodel.UserViewModel
+import com.example.workjugend.R
+import com.example.workjugend.databinding.FragmentRegisterSreenBinding
+import com.example.workjugend.viewmodel.UserViewModel
 
 class RegisterScreen : Fragment(R.layout.fragment__register_sreen) {
 
