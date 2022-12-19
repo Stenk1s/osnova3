@@ -10,7 +10,6 @@ import com.example.workjugend.viewmodel.AdVIewModel
 
 class DetailFragment: Fragment(R.layout.detail_fragment) {
     private val AdViewModel: AdVIewModel by activityViewModels()
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val binding: DetailFragmentBinding = DetailFragmentBinding.bind(view)
@@ -21,15 +20,15 @@ class DetailFragment: Fragment(R.layout.detail_fragment) {
         if (currentAd != null) {
             binding.title.text = currentAd.Title
             binding.zarplata.text = getString(R.string.zp, currentAd.Zarplata)
-            binding.old.text = currentAd.Old
-            binding.organization.text = currentAd.Organization
-            binding.opet.text = currentAd.Opet
-            binding.opisanie.text = currentAd.Opisanie
-            binding.trebovania.text = currentAd.Trebovanie
-            binding.sity.text = currentAd.Sity
-            binding.adres.text = currentAd.Adres
-            binding.namber.text = currentAd.Namber
-            binding.grafikrabot.text = currentAd.Grafik
+            binding.old.text = getString(R.string.old, currentAd.Old)
+            binding.organization.text = getString(R.string.org, currentAd.Organization)
+            binding.opet.text = getString(R.string.opet, currentAd.Opet)
+            binding.opisanie.text = getString(R.string.opisanie, currentAd.Opisanie)
+            binding.trebovania.text = getString(R.string.trebovania, currentAd.Trebovanie)
+            binding.sity.text = getString(R.string.city, currentAd.Sity)
+            binding.adres.text = getString(R.string.adres, currentAd.Adres)
+            binding.namber.text = getString(R.string.nomer, currentAd.Namber)
+            binding.grafikrabot.text = getString(R.string.grafik, currentAd.Grafik)
 
         }
     }

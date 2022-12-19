@@ -40,6 +40,16 @@
     <string name="ad_namber">Телефон: %s</string>
     <string name="ad_zarplata">%s</string>
     <string name="zp">Зарплата: %s</string>
+    <string name="city">Зарплата: %s</string>
+    <string name="org">Зарплата: %s</string>
+    <string name="opet">Зарплата: %s</string>
+    <string name="old">Зарплата: %s</string>
+    <string name="grafik">Зарплата: %s</string>
+    <string name="opisanie">Зарплата: %s</string>
+    <string name="adres">Зарплата: %s</string>
+    <string name="trebovania">Зарплата: %s</string>
+    <string name="nomer">Зарплата: %s</string>
+
 
 
 </resources>
