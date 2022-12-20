@@ -15,7 +15,7 @@ import ru.tinkoff.decoro.MaskImpl
 import ru.tinkoff.decoro.slots.PredefinedSlots
 import ru.tinkoff.decoro.watchers.FormatWatcher
 import ru.tinkoff.decoro.watchers.MaskFormatWatcher
-import java.util.*
+
 
 class NewScreen : Fragment(R.layout.new_menu) {
     private val AdVIewModel: AdVIewModel by activityViewModels()
